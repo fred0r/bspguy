@@ -179,7 +179,7 @@ if(MSVC)
 
 else()
 	target_link_libraries(${PROJECT_NAME} GL GLU X11 Xxf86vm Xrandr pthread Xi GLEW stdc++fs)
-	set(CMAKE_CXX_FLAGS "-Wall -std=c++11")
+	set(CMAKE_CXX_FLAGS "-Wall -std=c++11 -ldl")
 	set(CMAKE_CXX_FLAGS_DEBUG "-g -O0")
 	set(CMAKE_CXX_FLAGS_RELEASE "-Os -fno-exceptions -w -Wfatal-errors")
 endif()
